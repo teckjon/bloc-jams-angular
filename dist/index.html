@@ -19,19 +19,19 @@
 <body class="landing">
     <nav class="navbar">
         <!-- nav bar -->
-        <a ui-sref="index" class="logo">
+        <a ui-sref="landing" class="logo">
             <img src="assets/images/bloc_jams_logo.png" alt="bloc jams logo">
         </a>
         <div class="links-container">
-            <a ui-sref="collection" class="navbar-link">:active collection</a>
+            <a ui-sref="collection" class="navbar-link">active collection</a>
         </div>
     </nav>
-    <section class="hero-content">
-        <!-- hero content -->
+<!--    <section class="hero-content">
+         hero content 
         <h1 class="hero-title">Turn the music up!</h1>
     </section>
-    <section class="clearfix selling-points">
-        <!-- selling points -->
+   <section class="clearfix selling-points">
+         selling points 
         <div class="point column third">
             <span class="ion-music-note"></span>
             <h5 class="point-title">Choose your music</h5>
@@ -47,14 +47,20 @@
             <h5 class="point-title">Mobile enabled</h5>
             <p class="point-description">Listen to your music on the go. This streaming service is available on all mobile platforms.</p>
         </div>
-    </section>
+    </section>-->
     <ui-view></ui-view>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="/scripts/app.js"></script>
     <script src="/scripts/controllers/LandingCtrl.js"></script>
-    <script src="/scripts/fixtures.js"></script>
+    <script src="/scripts/services/Fixtures.js"></script>
     <script src="/scripts/controllers/CollectionCtrl.js"></script>
+    <script src="/scripts/controllers/AlbumCtrl.js"></script>
+    <script src="/scripts/directives/seekBar.js"></script>
+    <script src="/scripts/services/SongPlayer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.10/buzz.min.js"></script>
+    <script src="/scripts/controllers/PlayerBarCtrl.js"></script>
 </body>
 
 </html>

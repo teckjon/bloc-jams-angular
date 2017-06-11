@@ -1,11 +1,10 @@
- (function () {
+(function () {
      function config($stateProvider, $locationProvider) {
          $locationProvider
              .html5Mode({
                  enabled: true,
                  requireBase: false
-             });
-
+             })
          $stateProvider
              .state('landing', {
                  url: '/',
@@ -14,6 +13,7 @@
              })
              .state('album', {
                  url: '/album',
+                 controller: 'AlbumCtrl as album',
                  templateUrl: '/templates/album.html'
              })
              .state('collection', {
